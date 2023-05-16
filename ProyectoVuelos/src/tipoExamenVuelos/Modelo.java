@@ -23,11 +23,11 @@ public class Modelo {
 		this.lineas.add(linea);
 	}
 
-	/*
+	/**
 	 * 
-	 * @param localidad añade al mapa de conexiones una nueva pareja con la
-	 * localidad pasada como parámetro y un nuevo conjunto de vuelos vacío.
-	 * 
+	 * @param localidad anade al mapa de conexiones una nueva pareja con la
+	 * localidad pasada como parametro y un nuevo conjunto de vuelos vacio.
+	 *  
 	 * 
 	 **/
 
@@ -36,14 +36,14 @@ public class Modelo {
 
 	}
 
-	/*
-	 * En esta clase añadimos vuelos
+	/**
+	 * En esta clase anadimos vuelos
 	 * 
-	 * @param localidad indica la localidad donde se va añadir el vuelo
+	 * @param localidad indica la localidad donde se va anadir el vuelo
 	 * 
-	 * @param vuelo que va a ser añadido al conjunto de vuelos de la localidad
+	 * @param vuelo que va a ser anadido al conjunto de vuelos de la localidad
 	 * 
-	 **/
+	 */
 
 	public void addVueloALocalidad(Localidad localidad, Vuelo vuelo) {
 
@@ -56,7 +56,7 @@ public class Modelo {
 
 	}
 
-	/*
+	/**
 	 * @return: Devuelve un boolean indicando si hay errores en los datos, es decir,
 	 * 
 	 *
@@ -83,13 +83,13 @@ public class Modelo {
 		return hayError;
 	}
 
-	/*
+	/**
 	 * 
 	 * @param loc Pasamos por parametro la localidad a consultar el numero de vuelos
 	 * asociados
 	 * 
-	 * @return devuelve un entero con el número de vuelos que parten de la localidad
-	 * pasada como paámetro y llegan a localidades con más de 1.000.000 habs.
+	 * @return devuelve un entero con el numero de vuelos que parten de la localidad
+	 * pasada como pametro y llegan a localidades con mas de 1.000.000 habs.
 	 *
 	 * 
 	 */
@@ -114,13 +114,13 @@ public class Modelo {
 		return numVuelosALocsMillon;
 	}
 
-	/*
+	/**
 	 * 
 	 * @param localidad Pasamos por parametro la localidad a consultar todas las
-	 * lineas aereas que tienen vuelos hacia la localidad pasada como par�metro.
+	 * lineas aereas que tienen vuelos hacia la localidad pasada como parametro.
 	 * asociados
 	 * 
-	 * @return Devuelve un TreeSet con todas las líneas aéreas que tienen vuelos
+	 * @return Devuelve un TreeSet con todas las lineas aereas que tienen vuelos
 	 * hacia la localidad pasada como parámetro.
 	 * 
 	 *
@@ -145,12 +145,12 @@ public class Modelo {
 		return lineasHasta;
 	}
 
-	/*
+	/**
 	 * 
 	 * @param localidad Pasamos por parametro la localidad a consultar
 	 * 
 	 * @return Devuelve un entero con la suma de todos los aviones que tienen las
-	 * líneas que hacen vuelos desde la localidad pasada como parámetro.
+	 * líneas que hacen vuelos desde la localidad pasada como parametro.
 	 * 
 	 *
 	 * 
@@ -171,7 +171,7 @@ public class Modelo {
 		return totalAvionesDesde;
 	}
 
-	/*
+	/**
 	 * 
 	 * @return Devuelve un boolean indicando si existen dos ciudades entre las que
 	 * hay vuelos en los dos sentidos.
